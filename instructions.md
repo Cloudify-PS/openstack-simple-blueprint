@@ -1,4 +1,4 @@
-Part 1 - 
+Part 1
 
 Download the repo to a machine that has cloudify CLI
 
