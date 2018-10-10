@@ -3,8 +3,6 @@ tosca_definitions_version: cloudify_dsl_1_3
 imports:
   - http://www.getcloudify.org/spec/cloudify/4.3/types.yaml
   - plugin:cloudify-openstack-plugin
-
-
 inputs:
   server_name:
     type: string
@@ -20,7 +18,6 @@ inputs:
 
 
 dsl_definitions:
-
   openstack_config: &openstack_config
     username: { get_secret: keystone_username }
     password: { get_secret: keystone_password }
@@ -29,7 +26,6 @@ dsl_definitions:
     region: { get_secret: region }
 
 node_templates:
-
   server_host:
     type:  cloudify.openstack.nodes.Server
     properties:
