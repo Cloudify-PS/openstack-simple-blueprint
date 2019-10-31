@@ -1,20 +1,21 @@
 Part 1
 
-Download the repo to a machine that has cloudify CLI
+Download the repo to a machine that has cloudify CLI 4.6
 
-1. configure the CLI to work with the manager
-2. upload the openstack_vm.yaml
+1. Configure the CLI to work with the manager
+2. Upload the openstack-vm-blueprint.yaml
+> `cfy blueprints upload openstack-vm-blueprint.yaml`
+
 3. Create deployment
-4. run the install workflow
+4. Run the install workflow
 
 
- Part 2 
-1. modify the Blueprint
+ Part 2
+1. Modify the Blueprint
 - Remove the inputs and hardcode the values
 - Make the BP create 2 server: FrontEnd BackEnd
-From Me to Everyone:  04:37 PM
-2. Uplad the Blueprint
+2. Upload the Blueprint
 3. Create deployment
-4. Install
+4. Run the install workflow for the deployment
 5. Scale UP the Front End server
 6. Run Heal workflow on the backend (node instance)
