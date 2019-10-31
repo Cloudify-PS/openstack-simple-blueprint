@@ -12,6 +12,7 @@ inputs:
     type: string
     default: { get_secret: centos_core_image }
 
+
   server_flavor:
     type: string
     default: { get_secret: small_image_flavor  }
